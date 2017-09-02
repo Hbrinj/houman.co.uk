@@ -26,6 +26,10 @@ github_username:  hbrinj
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
+
+kramdown:
+        autoids:        true
 # theme: minima
 plugins:
   - jekyll-feed
