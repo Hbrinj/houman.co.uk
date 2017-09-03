@@ -16,8 +16,7 @@
   line-height: $base-line-height * $base-font-size * 2.25;
   letter-spacing: -1px;
   margin-bottom: 0;
-  float: left;
-
+  text-align: left;
   &,
   &:visited {
     color: $grey-color-dark;
@@ -26,6 +25,7 @@
 
 .site-nav {
   float: right;
+  text-align: right;
   line-height: $base-line-height * $base-font-size * 2.25;
 
   .nav-trigger {
@@ -100,7 +100,18 @@
   }
 }
 
+.icon-houman{
+  margin: auto;
+  display:block;
+}
 
+@media all and (min-width: 400px) {
+  .site-title, .site-nav { flex: 1 ; }
+  .icon-houman{flex: 1 ; }
+  .site-title { order: 1; }
+  .icon-houman{ order: 2; }
+  .site-nav   { order: 3; }
+}
 
 /**
  * Site footer

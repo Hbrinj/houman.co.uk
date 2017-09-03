@@ -179,7 +179,17 @@ pre {
   }
 }
 
+.headerwrapper {
+  @extend .wrapper;
+  display:         flex;
+  display:  -webkit-box;
+  display:     -moz-box;
+  display: -webkit-flex;
+  display:  -ms-flexbox;
 
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
 
 /**
  * Clearfix
